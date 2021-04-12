@@ -1,8 +1,8 @@
 #include "stdio.h"
 #include "string.h"
 
-void inputChar();
-void inputString();
+void inputChar(char character);
+void inputString(char string[]);
 
 int main(){
     int number_integer = 123;
@@ -27,7 +27,7 @@ int main(){
 }
 
 // Fungsi untuk input char
-void inputChar(character){
+void inputChar(char character){
     char input;
 
     printf("Masukkan char:");
@@ -43,7 +43,7 @@ void inputChar(character){
 }
 
 // Fungsi untuk input string
-void inputString(string){
+void inputString(char string[]){
     char input[] = "";
 
     printf("Masukkan char:");
