@@ -1,8 +1,8 @@
 #include "stdio.h"
 
 void printData(int limit, int data[]);
-void selectionSortAsc(int limit, int *data);
-void selectionSortDesc(int limit, int *data);
+void selectionSortAsc(int limit, int data[]);
+void selectionSortDesc(int limit, int data[]);
 
 int main(){
     int limit = 10;
@@ -30,7 +30,7 @@ void printData(int limit, int data[]){
     }
 }
 
-void selectionSortAsc(int limit, int *data){
+void selectionSortAsc(int limit, int data[]){
     int newLimit = limit-1;
     int selected, min;
 
@@ -50,7 +50,7 @@ void selectionSortAsc(int limit, int *data){
     printData(limit, data);
 }
 
-void selectionSortDesc(int limit, int *data){
+void selectionSortDesc(int limit, int data[]){
     int newLimit = limit-1;
     int selected, max;
 
