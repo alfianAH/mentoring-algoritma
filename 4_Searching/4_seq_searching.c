@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-void sequentialSearch(int input, int data[]);
+void sequentialSearch(int input, int data[], int limit);
 
 int main(){
     int limit = 10;
@@ -18,15 +18,15 @@ int main(){
     printf("Data yang anda masukkan: %d", input);
     printf("\nHasil:");
 
-    sequentialSearch(input, data);
+    sequentialSearch(input, data, limit);
     return 0;
 }
 
-void sequentialSearch(int input, int data[]){
+void sequentialSearch(int input, int data[], int limit){
     int flag = 0;
     int index = 0;
 
-    for (int i = 0; i<10; i++){
+    for (int i = 0; i<limit; i++){
         if(input == data[i]){
             flag = 1;
             index = i;
